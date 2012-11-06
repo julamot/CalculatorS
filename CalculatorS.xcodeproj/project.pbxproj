@@ -15,6 +15,7 @@
 		34A35BA414B3E6370002F519 /* CalculatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A35BA314B3E6370002F519 /* CalculatorAppDelegate.m */; };
 		34A35BA714B3E6370002F519 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A35BA514B3E6370002F519 /* MainStoryboard.storyboard */; };
 		34A35BAA14B3E6370002F519 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A35BA914B3E6370002F519 /* CalculatorViewController.m */; };
+		34A35BB214BDE01C0002F519 /* CalculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A35BB114BDE01C0002F519 /* CalculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,17 @@
 		34A35B9314B3E6370002F519 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34A35B9514B3E6370002F519 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34A35B9714B3E6370002F519 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		34A35B9B14B3E6370002F519 /* CalculatorS-Info.plist */ = {isa = PBXFileReference; path = "CalculatorS-Info.plist"; sourceTree = "<group>"; };
+		34A35B9B14B3E6370002F519 /* CalculatorS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorS-Info.plist"; sourceTree = "<group>"; };
 		34A35B9D14B3E6370002F519 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		34A35B9F14B3E6370002F519 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34A35BA114B3E6370002F519 /* CalculatorS-Prefix.pch */ = {isa = PBXFileReference; path = "CalculatorS-Prefix.pch"; sourceTree = "<group>"; };
-		34A35BA214B3E6370002F519 /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
+		34A35BA114B3E6370002F519 /* CalculatorS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalculatorS-Prefix.pch"; sourceTree = "<group>"; };
+		34A35BA214B3E6370002F519 /* CalculatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorAppDelegate.h; sourceTree = "<group>"; };
 		34A35BA314B3E6370002F519 /* CalculatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorAppDelegate.m; sourceTree = "<group>"; };
 		34A35BA614B3E6370002F519 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		34A35BA814B3E6370002F519 /* CalculatorViewController.h */ = {isa = PBXFileReference; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		34A35BA814B3E6370002F519 /* CalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
 		34A35BA914B3E6370002F519 /* CalculatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		34A35BB014BDE01C0002F519 /* CalculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorBrain.h; sourceTree = "<group>"; };
+		34A35BB114BDE01C0002F519 /* CalculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 				34A35BA214B3E6370002F519 /* CalculatorAppDelegate.h */,
 				34A35BA314B3E6370002F519 /* CalculatorAppDelegate.m */,
 				34A35BA514B3E6370002F519 /* MainStoryboard.storyboard */,
+				34A35BB014BDE01C0002F519 /* CalculatorBrain.h */,
+				34A35BB114BDE01C0002F519 /* CalculatorBrain.m */,
 				34A35BA814B3E6370002F519 /* CalculatorViewController.h */,
 				34A35BA914B3E6370002F519 /* CalculatorViewController.m */,
 				34A35B9A14B3E6370002F519 /* Supporting Files */,
@@ -124,7 +129,7 @@
 		34A35B8614B3E6360002F519 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = TomoTherapy;
 			};
 			buildConfigurationList = 34A35B8914B3E6360002F519 /* Build configuration list for PBXProject "CalculatorS" */;
@@ -164,6 +169,7 @@
 				34A35BA014B3E6370002F519 /* main.m in Sources */,
 				34A35BA414B3E6370002F519 /* CalculatorAppDelegate.m in Sources */,
 				34A35BAA14B3E6370002F519 /* CalculatorViewController.m in Sources */,
+				34A35BB214BDE01C0002F519 /* CalculatorBrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +281,7 @@
 				34A35BAF14B3E6370002F519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

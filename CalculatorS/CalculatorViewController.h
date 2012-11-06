@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CalculatorViewController : UIViewController
+// outlets are almost always weak
+@property (weak, nonatomic) IBOutlet UILabel *display;
 
 @end
